@@ -4,7 +4,7 @@ function FeatureStatusCtrl($scope, DataProvider) {
     $scope.options = {
         chart: {
             type: 'multiBarChart',
-            height: 450,
+            height: 400,
             margin: {
                 top: 20,
                 right: 20,
@@ -15,9 +15,9 @@ function FeatureStatusCtrl($scope, DataProvider) {
             //staggerLabels: true,
             duration: 500,
             color: ['#6EBA8C', '#005562', '#0E8174'],
-            stacked: true,
+            stacked: false,
             xAxis: {
-                axisLabel: 'Features',
+                axisLabel: 'Feature Names',
                 axisLabelDistance: 30,
                 showMaxMin: false
             },

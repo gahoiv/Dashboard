@@ -21,9 +21,9 @@
     <div class='chart-container'>
       <div class='panel animated zoomIn'>
         <div class='panel-body'>
-            <div class="header-top">
-                <h4>Top Passed Test Cases</h4>
-              </div>
+          <div class="header-top">
+            <h4>Top Passed Test Cases</h4>
+          </div>
           <div id="grid1" ui-grid="{ data: topPassedData, columnDefs: columnDefs }" class="grid"></div>
         </div>
       </div>
@@ -32,28 +32,28 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <div class='chart-container'>
-        <div class='panel animated zoomIn'>
-          <div class='panel-body'>
-              <div class="header-top">
-                  <h4>Top Failed Test Cases</h4>
-                </div>
-            <div id="grid2" ui-grid="{ data: topFailedData, columnDefs: columnDefs }" class="grid"></div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class='chart-container'>
+      <div class='panel animated zoomIn'>
+        <div class='panel-body'>
+          <div class="header-top">
+            <h4>Top Failed Test Cases</h4>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <div class='chart-container'>
-        <div class='panel animated zoomIn'>
-          <div class='panel-body'>
-              <div class="header-top">
-                  <h4>Top Skipped Test Cases</h4>
-                </div>
-            <div id="grid3" ui-grid="{ data: topSkippedData, columnDefs: columnDefs }" class="grid"></div>
-          </div>
+          <div id="grid2" ui-grid="{ data: topFailedData, columnDefs: columnDefs }" class="grid"></div>
         </div>
       </div>
     </div>
   </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class='chart-container'>
+      <div class='panel animated zoomIn'>
+        <div class='panel-body'>
+          <div class="header-top">
+            <h4>Top Skipped Test Cases</h4>
+          </div>
+          <div id="grid3" ui-grid="{ data: topSkippedData, columnDefs: columnDefs }" class="grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
