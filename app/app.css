@@ -1,0 +1,135 @@
+/* app css stylesheet */
+
+.menu {
+      /* height: 3rem; */
+      background-color: black;
+      color: #ebebeb;
+      border-bottom: 0.1em solid black;
+      margin-bottom: 2em;
+      padding: .5rem;
+      font-weight: 900;
+      font-size: 1.5rem;
+}
+
+body {
+      background-color: #F0F3F4;
+      height: 100%;
+}
+
+.pie-charts {
+      padding: 1rem;
+}
+
+.card-container {
+      position: relative;
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+}
+
+.card-body {
+      padding: 15px 22px;
+      height: 100%;
+}
+
+.card-description {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: .4rem;
+      text-align: -webkit-center;
+}
+
+.panel.animated {
+      animation-duration: 0.5s;
+      min-height: 114px;
+      height: 100%;
+}
+
+.panel {
+      color: #666666;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      position: relative;
+      margin-bottom: 24px;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.panel>.panel-body {
+      padding: 15px 22px;
+      height: 100%;
+}
+
+.pie-charts .pie-chart-item {
+      position: relative;
+}
+
+.pie-charts .chart {
+      position: relative;
+      display: inline-block;
+      width: 84px;
+      height: 84px;
+      text-align: center;
+      float: left;
+}
+
+.pie-charts .percent {
+      display: inline-block;
+      line-height: 84px;
+      z-index: 2;
+      font-size: 16px;
+}
+
+.pie-charts .chart canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+.row {
+      padding: 2.5rem;
+}
+
+.chart-container {
+      height: 480px;
+}
+
+.ui-grid{
+      background-color: #91c6a5 !important;
+      height: calc(100% - 4rem);
+}
+.ui-grid-header-cell {
+      background-color: #005562;
+      color: #ebebeb;
+      border: none;
+}
+.ui-grid-cell{
+      background-color: #91c6a5 !important;
+      border: none !important;
+} 
+
+.view-container {
+      padding: 2rem;
+}
+
+.content-top {
+      padding: 0 2rem 0 2rem;
+      color: #6EBA8C;
+      display: flex;
+      justify-content: space-between;
+}
+
+.header-top {
+      color: #6EBA8C;
+}
+
+.header-top h4{
+      font-weight: 700;
+}
+.al-title {
+      font-weight: 700;
+}
+h4.al-title {
+      padding-top: 2rem;
+      font-weight: 700;
+}

@@ -1,0 +1,31 @@
+[{
+   "Total Test Cases": 232,
+    "Total Passed": 200,
+    "Total Failed": 22,
+    "Total Skipped": 10,
+    "Feature Name": "Feature1"
+},{
+    "Total Test Cases": 232,
+     "Total Passed": 200,
+     "Total Failed": 22,
+     "Total Skipped": 10,
+     "Feature Name": "Feature 2"
+ },{
+    "Total Test Cases": 232,
+     "Total Passed": 200,
+     "Total Failed": 22,
+     "Total Skipped": 10,
+     "Feature Name": "Feature 3"
+ },{
+    "Total Test Cases": 232,
+     "Total Passed": 200,
+     "Total Failed": 22,
+     "Total Skipped": 10,
+     "Feature Name": "Feature 4"
+ },{
+    "Total Test Cases": 232,
+     "Total Passed": 200,
+     "Total Failed": 22,
+     "Total Skipped": 10,
+     "Feature Name": "Feature 5"
+ }]

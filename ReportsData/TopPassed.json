@@ -1,0 +1,31 @@
+[{
+   "TestCasesName": "Test Case 1",
+    "PassedExecution": 200,
+    "FailedExecution": 22,
+    "SkippedExecution": 10,
+    "TestCaseId": "Test1"
+},{
+    "TestCasesName": "Test Case 2",
+     "PassedExecution": 200,
+     "FailedExecution": 22,
+     "SkippedExecution": 10,
+     "TestCaseId": "Test2"
+ },{
+    "TestCasesName": "Test Case 3",
+     "PassedExecution": 200,
+     "FailedExecution": 22,
+     "SkippedExecution": 10,
+     "TestCaseId": "Test3"
+ },{
+    "TestCasesName": "Test Case 4",
+     "PassedExecution": 200,
+     "FailedExecution": 22,
+     "SkippedExecution": 10,
+     "TestCaseId": "Test4"
+ },{
+    "TestCasesName": "Test Case 5",
+     "PassedExecution": 200,
+     "FailedExecution": 22,
+     "SkippedExecution": 10,
+     "TestCaseId": "Test5"
+ }]
