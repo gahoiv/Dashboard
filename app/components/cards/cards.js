@@ -26,25 +26,26 @@ function CardsController($scope, DataProvider, $timeout) {
       totalFeature: data['Total Features'],
       passedTest: {
         count: data['Total Passed'],
-        percent: data['Total Passed'] / data['Total Test Cases'] * 100
+        percent: Math.round(data['Total Passed'] / data['Total Test Cases'] * 100)
       },
       failedTest: {
         count: data['Total Failed'],
-        percent: data['Total Failed'] / data['Total Test Cases'] * 100
+        percent: Math.round(data['Total Failed'] / data['Total Test Cases'] * 100)
       },
       skippedTest: {
         count: data['Total Skipped'],
-        percent: data['Total Skipped'] / data['Total Test Cases'] * 100
+        percent: Math.round(data['Total Skipped'] / data['Total Test Cases'] * 100)
       },
     };
   }
   DataProvider.getExecutionInfo().then(function (response) {
       $scope.exeInfo = convertCardData(response.data);
+      $timeout(function () {
+        loadPieCharts();
+      }, 500);
     });
 
-  $timeout(function () {
-    loadPieCharts();
-  }, 1000);
+ 
 }
 
 angular.module('myApp.dashboard').component('cards', {

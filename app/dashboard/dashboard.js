@@ -19,6 +19,7 @@ angular.module('myApp.dashboard', ['ngRoute'])
       { name: 'SkippedExecution', width: '20%', displayName: 'SKIP COUNT' }
     ];
     DataProvider.getTopPassed().then(function(response) {
+      debugger;
       $scope.topPassedData = response.data;
     });
     DataProvider.getTopFailed().then(function(response) {
