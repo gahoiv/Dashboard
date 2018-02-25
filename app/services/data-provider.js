@@ -4,8 +4,8 @@ const env = 'prod'
 const noOfRecords = 10;
 const prodUrlMap = {
   executionInfoUrl: 'http://localhost:8080/ExecutionInfo.json',
-  featureStatsUrl: `http://localhost:8080/topSuccessFeatures?number=${noOfRecords}`,
-  topPassedUrl: `http://localhost:8080/topTestCaseSuccess?number=${noOfRecords}`
+  featureStatsUrl: `http://localhost:8080/topFeatures?number=${noOfRecords}`,
+  topPassedUrl: `http://localhost:8080/topTestCases?number=${noOfRecords}`
 };
 
 const testUrlMap = {
@@ -28,9 +28,9 @@ angular.module('myApp.dashboard')
       return $http.get(urlMap.topPassedUrl);
     };
     this.getTopFailed = function getTopFailed() {
-      return $http.get(urlMap.topPassedUrl);
+      return $http.get(`${urlMap.topPassedUrl}&executionResult=Fail`);
     };
     this.getTopSkipped = function getTopSkipped() {
-      return $http.get(urlMap.topPassedUrl);
+      return $http.get(`${urlMap.topPassedUrl}&executionResult=Skip`);
     };
   });
