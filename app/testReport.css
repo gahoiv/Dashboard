@@ -1,0 +1,139 @@
+.nav-pills>li>a {
+    color: #ebebeb;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background: darkblue;
+}
+
+.no-padding {
+    padding: 0px;
+    height: 100vh;
+}
+
+.testReportContainer {
+    padding-top: 1rem;
+    height: 100vh;
+}
+
+.testReportHeader {
+    padding: 0 2rem 0 2rem;
+    background-color: #4159b9;
+    color: #fff;
+}
+
+.testReportBody {
+    overflow: hidden;
+    height: calc( 100vh - 50px);
+}
+
+.testTabContainer {
+    background-color: #b8c4f7;
+    height: 100vh;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.customNav>li>a {
+    color: #6a6b6d;
+    padding: .5rem 2rem .5rem 2rem;
+}
+
+.customNav>li>a:hover,
+.customNav>li>a:focus {
+    background: #fff;
+    border-radius: 0px;
+}
+
+.testTabHeader {
+    height: 70px;
+    padding: 2rem;
+    color: #4159b9;
+}
+
+.testTabBody {
+    height: calc( 100vh - 70px);
+}
+
+.testTabHeader>div {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.testTabHeader>div+div {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.testDetailsHeader {
+    height: 80px;
+    padding: 2rem;
+    color: #4159b9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testDetailsBody {
+    height: calc( 100vh - 80px);
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.detailsName {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0px;
+}
+
+.detailsBreadCrumb {
+    font-size: 12px;
+    color: grey;
+}
+
+.detailsDate>span {
+    font-size: 11px;
+    color: grey;
+}
+
+.detailsDate>span+span {
+    font-weight: 700;
+}
+
+.bodyHeader {
+    font-size: 14px;
+    padding: 1rem;
+    padding-top: 4rem;
+    color: #4159b9;
+}
+
+.bodyTableHeader {
+    font-size: 12px;
+    font-weight: 700;
+    color: grey;
+}
+
+.bottom-border {
+    border-bottom: 2px solid rgb(212, 210, 210);
+    padding-bottom: 5px;
+}
+
+.bodyTabledata {
+    height: 30px;
+}
+
+.bottom-border1 {
+    border-bottom: 1px solid rgb(221, 215, 215);
+    padding: .3rem 1.3rem .3rem 1.3rem;
+}
+
+.green {
+    color: rgb(25, 83, 25);
+}
+
+.red {
+    color: rgb(158, 9, 9);
+}

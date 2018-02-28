@@ -1,0 +1,42 @@
+<div class='testReportContainer'>
+  <div class='testReportHeader'>
+    <ul class="nav nav-pills">
+      <li>
+          <a><i class="fa fa-align-justify"></i>  </a>
+      </li>
+      <li>
+        <a href ng-click="setTab('')">All</a>
+      </li>
+      <li>
+        <a href ng-click="setTab('Pass')">Passed</a>
+      </li>
+      <li>
+        <a href ng-click="setTab('Fail')">Failed</a>
+      </li>
+      <li>
+        <a href ng-click="setTab('Skip')">Skipped</a>
+      </li>
+    </ul>
+  </div>
+  <div class='testReportBody'>
+    <div class="col-lg-3 col-md-12 col-sm-12 no-padding">
+      <div class='testTabContainer'>
+        <div class='testTabHeader'>
+          <div>Test Name</div>
+          <div>{{data.name}}</div>
+        </div>
+        <div class='testTabBody'>
+          <ul class="customNav nav nav-pills">
+            <li class='fullWidth' ng-class="{active:tab.isSet(1)}" data-ng-repeat="test in data.testArray|filter: tabId">
+              <a href ng-click="setTestId(test.id)">
+                <i class="fa fa-address-card red"></i>  {{test.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-9 col-md-12 col-sm-12 no-padding">
+      <testDetails></testDetails>
+    </div>
+  </div>

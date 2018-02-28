@@ -12,7 +12,10 @@
 }
 
 body {
-      background-color: #F0F3F4;
+      height: 100%;
+}
+
+.view-container {
       height: 100%;
 }
 
@@ -108,9 +111,6 @@ body {
       border: none !important;
 } 
 
-.view-container {
-      padding: 2rem;
-}
 
 .content-top {
       padding: 0 2rem 0 2rem;

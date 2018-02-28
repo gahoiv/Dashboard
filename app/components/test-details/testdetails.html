@@ -1,0 +1,79 @@
+<div class='testDetailsHeader'>
+    <div>
+        <div class='detailsName'>Test Name</div>
+        <div class='detailsBreadCrumb'>Reports > {{test.name}} > {{test.testName}}</div>
+    </div>
+    <div>
+        <div class='detailsDate'>
+            <span>Start Time: </span>
+            <span>09 Oct 2016 | 14:41:55</span>
+        </div>
+        <div class='detailsDate'>
+            <span>End Time: </span>
+            <span>09 Oct 2016 | 14:41:55</span>
+        </div>
+        <div class='detailsDate'>
+            <span>Duration: </span>
+            <span>09 Oct 2016 | 14:41:55</span>
+        </div>
+    </div>
+</div>
+<div class='testDetailsBody'>
+    <div class='bodyHeader'>
+        Regression Test
+    </div>
+    <div class='bodyTableHeader'>
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border">
+            Time Stamp
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border">
+            Details
+        </div>
+    </div>
+    <div class='bodyTabledata' data-ng-repeat="test in regression">
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border1">
+            {{test.timestamp}}
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border1">
+            <i class="fa fa-envelope green" aria-hidden="true"></i> {{test.details}}
+        </div>
+    </div>
+    <div class='bodyHeader'>
+        Video Attachments
+    </div>
+    <div class='bodyTableHeader'>
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border">
+            Time Stamp
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border">
+            Details
+        </div>
+    </div>
+    <div class='bodyTabledata' data-ng-repeat="test in video">
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border1">
+            {{test.timestamp}}
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border1">
+            <textarea cols=100 rows=10>{{test.details}}</textarea>
+        </div>
+    </div>
+    <div class='bodyHeader'>
+        Logs Attachments
+    </div>
+    <div class='bodyTableHeader'>
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border">
+            Time Stamp
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border">
+            Details
+        </div>
+    </div>
+    <div class='bodyTabledata' data-ng-repeat="test in logs">
+        <div class="col-lg-2 col-md-12 col-sm-12 bottom-border1">
+            {{test.timestamp}}
+        </div>
+        <div class="col-lg-10 col-md-12 col-sm-12 bottom-border1">
+            <textarea cols=100 rows=10>{{test.details}}</textarea>
+        </div>
+    </div>
+</div>
