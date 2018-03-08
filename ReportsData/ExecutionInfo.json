@@ -1,7 +1,10 @@
 {
-    "Total Test Cases": 232,
-    "Total Passed": 200,
-    "Total Failed": 22,
-    "Total Skipped": 10,
-    "Total Features": 21
+    "Session Duration in sec": 900,
+    "Total Test Cases": 600,
+    "Total Passed": 192,
+    "Total Failed": 211,
+    "Total Skipped": 197,
+    "Total Manual Run": 290,
+    "Total Automated Run": 310,
+    "Total Features": 6
 }

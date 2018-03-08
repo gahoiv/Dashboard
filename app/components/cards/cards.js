@@ -24,6 +24,9 @@ function CardsController($scope, DataProvider, $timeout) {
     return {
       toatlTests: data['Total Test Cases'],
       totalFeature: data['Total Features'],
+      totalManual: data['Total Manual Run'],
+      totalAutomated: data['Total Automated Run'],
+      totalSessionTime: new Date(data['Session Duration in sec'] * 1000).toISOString().substr(11, 8),
       passedTest: {
         count: data['Total Passed'],
         percent: Math.round(data['Total Passed'] / data['Total Test Cases'] * 100)
