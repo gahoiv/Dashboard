@@ -18,6 +18,13 @@ angular.module('myApp.dashboard', ['ngRoute'])
       { name: 'FailedExecution', width: '20%', displayName: 'FAIL COUNT' },
       { name: 'SkippedExecution', width: '20%', displayName: 'SKIP COUNT' }
     ];
+    $scope.columnDefsDuration = [ 
+      { name: 'TestCasesId', width: '15%', displayName: 'ID' },
+      { name: 'TestCasesName', width: '25%', displayName: 'NAME' },
+      { name: 'Status', width: '20%', displayName: 'STATUS' },
+      { name: 'SessionId', width: '20%', displayName: 'SESSION ID' },
+      { name: 'SubSessionId', width: '20%', displayName: 'SUB SESSSION ID' }
+    ];
     DataProvider.getTopPassed().then(function(response) {
       $scope.topPassedData = response.data;
     });
