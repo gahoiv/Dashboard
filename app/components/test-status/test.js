@@ -17,7 +17,7 @@ function TestStatusCtrl($scope, DataProvider) {
             color: ['#6EBA8C', '#005562', '#0E8174'],
             stacked: false,
             xAxis: {
-                axisLabel: 'Test Case Id',
+                axisLabel: 'Test Case Name',
                 axisLabelDistance: 30,
                 showMaxMin: false
             },
@@ -36,7 +36,7 @@ function TestStatusCtrl($scope, DataProvider) {
 
     function convertChartData(testData) {
         return [{
-                key: 'Test Case Id',
+                key: 'Test Case Name',
                 values: getAxisData(testData, 'AverageRunTime')
             }
         ];
@@ -45,7 +45,7 @@ function TestStatusCtrl($scope, DataProvider) {
     function getAxisData(testData, key) {
         return testData.map(function (test) {
             return {
-                x: test['Test case name'],
+                x: test['TestCasesName'],
                 y: test[key]
             };
         });
