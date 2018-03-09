@@ -1,59 +1,97 @@
-<div class="content-top">
-  <h1 class="al-title">Dashboard</h1>
-  <h4 class="al-title">Last session execution details</h4>
-</div>
-<cards></cards>
-<div class="content-top">
-  <h2 class="al-title">System Health</h2>
-  <h4 class="al-title">Based on last 30 days excution</h4>
-</div>
-<div class="row">
-  <div class="col-lg-6 col-md-12 col-sm-12">
-    <div class='chart-container'>
-      <div class='panel animated zoomIn'>
-        <div class='panel-body'>
-          <feature></feature>
-        </div>
-      </div>
+<div class="dashboardContainer">
+    <div class="content-top">
+        <h1 class="al-title">Dashboard</h1>
+        <h4 class="al-title">Last session execution details</h4>
     </div>
-  </div>
-  <div class="col-lg-6 col-md-12 col-sm-12">
-    <div class='chart-container'>
-      <div class='panel animated zoomIn'>
-        <div class='panel-body'>
-          <div class="header-top">
-            <h4>Top Passed Test Cases</h4>
-          </div>
-          <div id="grid1" ui-grid="{ data: topPassedData, columnDefs: columnDefs }" class="grid"></div>
-        </div>
-      </div>
+    <cards></cards>
+    <div class="content-top">
+        <h2 class="al-title">System Health</h2>
+        <h4 class="al-title">Based on last 30 days excution</h4>
     </div>
-  </div>
-</div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <feature></feature>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <div class="header-top">
+                            <h4>Top Passed Test Cases</h4>
+                        </div>
+                        <div id="grid1" ui-grid="{ data: topPassedData, columnDefs: columnDefs }" class="grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="row">
-  <div class="col-lg-6 col-md-12 col-sm-12">
-    <div class='chart-container'>
-      <div class='panel animated zoomIn'>
-        <div class='panel-body'>
-          <div class="header-top">
-            <h4>Top Failed Test Cases</h4>
-          </div>
-          <div id="grid2" ui-grid="{ data: topFailedData, columnDefs: columnDefs }" class="grid"></div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <test></test>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-6 col-md-12 col-sm-12">
-    <div class='chart-container'>
-      <div class='panel animated zoomIn'>
-        <div class='panel-body'>
-          <div class="header-top">
-            <h4>Top Skipped Test Cases</h4>
-          </div>
-          <div id="grid3" ui-grid="{ data: topSkippedData, columnDefs: columnDefs }" class="grid"></div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <div class="header-top">
+                            <h4>Top Long duration Test Cases</h4>
+                        </div>
+                        <div id="grid11" ui-grid="{ data: topAvgLongDuration, columnDefs: columnDefs }" class="grid"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <build></build>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <div class="header-top">
+                            <h4>Top Skipped Test Cases</h4>
+                        </div>
+                        <div id="grid3" ui-grid="{ data: topSkippedData, columnDefs: columnDefs }" class="grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class='chart-container'>
+                <div class='panel animated zoomIn'>
+                    <div class='panel-body'>
+                        <div class="header-top">
+                            <h4>Top Failed Test Cases</h4>
+                        </div>
+                        <div id="grid2" ui-grid="{ data: topFailedData, columnDefs: columnDefs }" class="grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

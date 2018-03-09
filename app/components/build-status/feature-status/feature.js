@@ -25,7 +25,7 @@ function FeatureStatusCtrl($scope, DataProvider) {
                 axisLabel: 'Test case count',
                 axisLabelDistance: -20,
                 tickFormat: function (d) {
-                    return d3.format(',')(d);
+                    return d3.format(',.1f')(d);
                 }
             }
         }

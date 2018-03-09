@@ -1,5 +1,5 @@
 
-function FeatureStatusCtrl($scope, DataProvider) {
+function BuildStatusCtrl($scope, DataProvider) {
 
     $scope.options = {
         chart: {
@@ -15,7 +15,7 @@ function FeatureStatusCtrl($scope, DataProvider) {
             //staggerLabels: true,
             duration: 500,
             color: ['#6EBA8C', '#005562', '#0E8174'],
-            stacked: false,
+            stacked: true,
             xAxis: {
                 axisLabel: 'Feature Names',
                 axisLabelDistance: 30,
@@ -31,37 +31,37 @@ function FeatureStatusCtrl($scope, DataProvider) {
         }
     };
 
-    DataProvider.getFeatureInfo().then(function (response) {
+    DataProvider.getLatestBuildInfo().then(function (response) {
         $scope.data = convertChartData(response.data);
     });
 
-    function convertChartData(featureData) {
+    function convertChartData(buildData) {
         return [{
                 key: 'Test Passed',
-                values: getAxisData(featureData, 'Total Passed')
+                values: getAxisData(buildData, 'Total_Pass')
             },
             {
                 key: 'Test Failed',
-                values: getAxisData(featureData, 'Total Failed')
+                values: getAxisData(buildData, 'Total_Fail')
             },
             {
                 key: 'Test Skipped',
-                values: getAxisData(featureData, 'Total Skipped')
+                values: getAxisData(buildData, 'Total_Skip')
             }
         ];
     }
 
-    function getAxisData(featureData, key) {
-        return featureData.map(function (feature) {
+    function getAxisData(buildData, key) {
+        return buildData.map(function (build) {
             return {
-                x: feature['Feature Name'],
-                y: feature[key]
+                x: build['SessionId'],
+                y: build[key]
             };
         });
     }
 }
 
-angular.module('myApp.dashboard').component('feature', {
-    templateUrl: 'components/feature-status/feature.html',
-    controller: FeatureStatusCtrl
+angular.module('myApp.dashboard').component('build', {
+    templateUrl: 'components/build-status/build.html',
+    controller: BuildStatusCtrl
 });
